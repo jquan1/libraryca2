@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace LibraryForm
 {
-    public partial class FormSearchBook : Form
+    public partial class Form2 : Form
     {
-        public FormSearchBook()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
