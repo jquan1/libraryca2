@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LibraryForm
 {
-    public partial class BookInfo_CreateNewBook : Form
+    public partial class SearchBook_BorrowLibrarianNew : Form
     {
-        public BookInfo_CreateNewBook()
+        public SearchBook_BorrowLibrarianNew()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

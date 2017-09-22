@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LibraryForm
 {
-    public partial class BookInfo_CreateNewBook : Form
+    public partial class BookInfo_Update : Form
     {
-        public BookInfo_CreateNewBook()
+        public BookInfo_Update()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
