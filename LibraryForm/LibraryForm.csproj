@@ -107,6 +107,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MemberInfo-UpdateDetails.resx">
+      <DependentUpon>MemberInfo-UpdateDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Search book.resx">
       <DependentUpon>Search book.cs</DependentUpon>
     </EmbeddedResource>

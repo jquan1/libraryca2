@@ -43,6 +43,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -175,11 +176,22 @@
             this.button4.Text = "Delete";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(58, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(269, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Notes: All the information to be changed should be here";
+            // 
             // MemberInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(667, 397);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
@@ -218,5 +230,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label1;
     }
 }
