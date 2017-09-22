@@ -57,8 +57,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book information.Designer.cs">
+      <DependentUpon>Book information.cs</DependentUpon>
+    </Compile>
     <Compile Include="Book.cs">
       <DependentUpon>LibraryEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookInfo-AddNewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookInfo-AddNewBook.Designer.cs">
+      <DependentUpon>BookInfo-AddNewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberInfo-CreateNewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInfo-CreateNewMember.Designer.cs">
+      <DependentUpon>MemberInfo-CreateNewMember.cs</DependentUpon>
     </Compile>
     <Compile Include="MemberInfo-UpdateDetails.cs">
       <SubType>Form</SubType>
@@ -107,6 +125,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Book information.resx">
+      <DependentUpon>Book information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookInfo-AddNewBook.resx">
+      <DependentUpon>BookInfo-AddNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInfo-CreateNewMember.resx">
+      <DependentUpon>MemberInfo-CreateNewMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MemberInfo-UpdateDetails.resx">
       <DependentUpon>MemberInfo-UpdateDetails.cs</DependentUpon>
     </EmbeddedResource>
