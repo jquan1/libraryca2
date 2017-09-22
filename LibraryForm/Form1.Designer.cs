@@ -1,6 +1,6 @@
 ﻿namespace LibraryForm
 {
-    partial class Form1
+    partial class FormSearchBook
     {
         /// <summary>
         /// Required designer variable.
@@ -174,7 +174,7 @@
             this.returnBookToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.returnBookToolStripMenuItem.Text = "Return book";
             // 
-            // Form1
+            // FormSearchBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -190,7 +190,7 @@
             this.Controls.Add(this.llBookTitle);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "FormSearchBook";
             this.Text = "Search book";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
