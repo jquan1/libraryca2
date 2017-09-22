@@ -60,11 +60,17 @@
     <Compile Include="Book.cs">
       <DependentUpon>LibraryEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="MemberInfo-UpdateDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MemberInfo-UpdateDetails.Designer.cs">
+      <DependentUpon>MemberInfo-UpdateDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search book.Designer.cs">
+      <DependentUpon>Search book.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -93,10 +99,19 @@
     <Compile Include="Member.cs">
       <DependentUpon>LibraryEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="MemberInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInformation.Designer.cs">
+      <DependentUpon>MemberInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Search book.resx">
+      <DependentUpon>Search book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInformation.resx">
+      <DependentUpon>MemberInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
