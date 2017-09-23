@@ -16,5 +16,10 @@ namespace LibraryForm
         {
             InitializeComponent();
         }
+
+        private void TxtBoxBookID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
