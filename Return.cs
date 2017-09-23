@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibraryForm
 {
-    public partial class SearchBook_BorrowLibrarianNew : Form
+    public partial class Return : Form
     {
-        public SearchBook_BorrowLibrarianNew()
+        public Return()
         {
             InitializeComponent();
         }

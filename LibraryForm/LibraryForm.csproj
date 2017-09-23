@@ -49,123 +49,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Backup\Book information.cs">
-      <SubType>Form</SubType>
-      <Link>Book information.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\Book information.Designer.cs">
-      <DependentUpon>Book information.cs</DependentUpon>
-      <Link>Book information.Designer.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\BookInfo-AddNewBook.cs">
-      <SubType>Form</SubType>
-      <Link>BookInfo-AddNewBook.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\BookInfo-AddNewBook.Designer.cs">
-      <DependentUpon>BookInfo-AddNewBook.cs</DependentUpon>
-      <Link>BookInfo-AddNewBook.Designer.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\BookInfo-Update.cs">
-      <SubType>Form</SubType>
-      <Link>BookInfo-Update.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\BookInfo-Update.Designer.cs">
-      <DependentUpon>BookInfo-Update.cs</DependentUpon>
-      <Link>BookInfo-Update.Designer.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\MemberInfo-CreateNewMember.cs">
-      <SubType>Form</SubType>
-      <Link>MemberInfo-CreateNewMember.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\MemberInfo-CreateNewMember.Designer.cs">
-      <DependentUpon>MemberInfo-CreateNewMember.cs</DependentUpon>
-      <Link>MemberInfo-CreateNewMember.Designer.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\MemberInfo-UpdateDetails.cs">
-      <SubType>Form</SubType>
-      <Link>MemberInfo-UpdateDetails.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\MemberInfo-UpdateDetails.Designer.cs">
-      <DependentUpon>MemberInfo-UpdateDetails.cs</DependentUpon>
-      <Link>MemberInfo-UpdateDetails.Designer.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\New folder\Return.cs">
-      <SubType>Form</SubType>
-      <Link>Return.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\New folder\Return.Designer.cs">
-      <DependentUpon>Return.cs</DependentUpon>
-      <Link>Return.Designer.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\New folder\ReturnBook.cs">
-      <SubType>Form</SubType>
-      <Link>ReturnBook.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\New folder\ReturnBook.Designer.cs">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
-      <Link>ReturnBook.Designer.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\Search book.cs">
-      <SubType>Form</SubType>
-      <Link>Search book.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\Search book.Designer.cs">
-      <DependentUpon>Search book.cs</DependentUpon>
-      <Link>Search book.Designer.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\MemberInformation.cs">
-      <SubType>Form</SubType>
-      <Link>MemberInformation.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Backup\MemberInformation.Designer.cs">
-      <DependentUpon>MemberInformation.cs</DependentUpon>
-      <Link>MemberInformation.Designer.cs</Link>
-    </Compile>
     <Compile Include="..\..\Backup\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchBook-BorrowLibrarianNew.cs">
+    <Compile Include="Book information.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SearchBook-BorrowLibrarianNew.Designer.cs">
-      <DependentUpon>SearchBook-BorrowLibrarianNew.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="..\..\Backup\Book information.resx">
+    <Compile Include="Book information.designer.cs">
       <DependentUpon>Book information.cs</DependentUpon>
-      <Link>Book information.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Backup\BookInfo-AddNewBook.resx">
+    </Compile>
+    <Compile Include="BookInfo-AddNewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookInfo-AddNewBook.designer.cs">
       <DependentUpon>BookInfo-AddNewBook.cs</DependentUpon>
-      <Link>BookInfo-AddNewBook.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Backup\BookInfo-Update.resx">
+    </Compile>
+    <Compile Include="BookInfo-Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookInfo-Update.designer.cs">
       <DependentUpon>BookInfo-Update.cs</DependentUpon>
-      <Link>BookInfo-Update.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Backup\MemberInfo-CreateNewMember.resx">
+    </Compile>
+    <Compile Include="MemberInfo-CreateNewMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInfo-CreateNewMember.designer.cs">
       <DependentUpon>MemberInfo-CreateNewMember.cs</DependentUpon>
-      <Link>MemberInfo-CreateNewMember.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Backup\MemberInfo-UpdateDetails.resx">
+    </Compile>
+    <Compile Include="MemberInfo-UpdateDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInfo-UpdateDetails.designer.cs">
       <DependentUpon>MemberInfo-UpdateDetails.cs</DependentUpon>
-      <Link>MemberInfo-UpdateDetails.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Backup\New folder\Return.resx">
-      <DependentUpon>Return.cs</DependentUpon>
-      <Link>Return.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Backup\New folder\ReturnBook.resx">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
-      <Link>ReturnBook.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Backup\Search book.resx">
-      <DependentUpon>Search book.cs</DependentUpon>
-      <Link>Search book.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Backup\MemberInformation.resx">
+    </Compile>
+    <Compile Include="MemberInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInformation.designer.cs">
       <DependentUpon>MemberInformation.cs</DependentUpon>
-      <Link>MemberInformation.resx</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return.designer.cs">
+      <DependentUpon>Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBook.designer.cs">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search book.designer.cs">
+      <DependentUpon>Search book.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Book information.resx">
+      <DependentUpon>Book information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookInfo-AddNewBook.resx">
+      <DependentUpon>BookInfo-AddNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookInfo-Update.resx">
+      <DependentUpon>BookInfo-Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInfo-CreateNewMember.resx">
+      <DependentUpon>MemberInfo-CreateNewMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInfo-UpdateDetails.resx">
+      <DependentUpon>MemberInfo-UpdateDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInformation.resx">
+      <DependentUpon>MemberInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,8 +134,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SearchBook-BorrowLibrarianNew.resx">
-      <DependentUpon>SearchBook-BorrowLibrarianNew.cs</DependentUpon>
+    <EmbeddedResource Include="Return.resx">
+      <DependentUpon>Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnBook.resx">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search book.resx">
+      <DependentUpon>Search book.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
