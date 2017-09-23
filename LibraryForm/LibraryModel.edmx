@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LibraryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'library.dbo.Books' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Books">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="smallint" Nullable="false" />
+          <Property Name="BookTitle" Type="nvarchar" MaxLength="50" />
+          <Property Name="BookType" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rating" Type="nvarchar" MaxLength="3" />
+          <Property Name="Publisher" Type="nvarchar" MaxLength="50" />
+          <Property Name="Author" Type="nvarchar" MaxLength="50" />
+          <Property Name="Media" Type="nvarchar" MaxLength="50" />
+          <Property Name="TotalStock" Type="smallint" />
+          <Property Name="NumberBorrowed" Type="smallint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'library.dbo.IssueTran' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="IssueTran">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="TransactionID" Type="smallint" Nullable="false" />
+          <Property Name="MemberID" Type="nvarchar" MaxLength="4" />
+          <Property Name="BookID" Type="smallint" />
+          <Property Name="DateIssue" Type="datetime" />
+          <Property Name="DateDue" Type="datetime" />
+          <Property Name="DateActualReturn" Type="datetime" />
+          <Property Name="BorrowStatus" Type="nvarchar" MaxLength="3" />
+          <Property Name="Remarks" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'library.dbo.Member' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="MemberName" Type="nvarchar" MaxLength="50" />
+          <Property Name="MemberCategory" Type="nvarchar" MaxLength="2" />
+          <Property Name="Address" Type="nvarchar" MaxLength="65" />
+          <Property Name="City" Type="nvarchar" MaxLength="30" />
+          <Property Name="OldPostalCode" Type="nvarchar" MaxLength="4" />
+          <Property Name="PostalCode" Type="nvarchar" MaxLength="6" />
+          <Property Name="CountryCode" Type="nvarchar" MaxLength="3" />
+          <Property Name="ContactTitle" Type="nvarchar" MaxLength="2" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="9" />
+          <Property Name="Extension" Type="nvarchar" MaxLength="5" />
+          <Property Name="FaxNumber" Type="nvarchar" MaxLength="30" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="Notes" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="LibraryModelStoreContainer">
+          <EntitySet Name="Books" EntityType="Self.Books" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Books].[BookID] AS [BookID], 
+    [Books].[BookTitle] AS [BookTitle], 
+    [Books].[BookType] AS [BookType], 
+    [Books].[Rating] AS [Rating], 
+    [Books].[Publisher] AS [Publisher], 
+    [Books].[Author] AS [Author], 
+    [Books].[Media] AS [Media], 
+    [Books].[TotalStock] AS [TotalStock], 
+    [Books].[NumberBorrowed] AS [NumberBorrowed]
+    FROM [dbo].[Books] AS [Books]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="IssueTran" EntityType="Self.IssueTran" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [IssueTran].[TransactionID] AS [TransactionID], 
+    [IssueTran].[MemberID] AS [MemberID], 
+    [IssueTran].[BookID] AS [BookID], 
+    [IssueTran].[DateIssue] AS [DateIssue], 
+    [IssueTran].[DateDue] AS [DateDue], 
+    [IssueTran].[DateActualReturn] AS [DateActualReturn], 
+    [IssueTran].[BorrowStatus] AS [BorrowStatus], 
+    [IssueTran].[Remarks] AS [Remarks]
+    FROM [dbo].[IssueTran] AS [IssueTran]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Member" EntityType="Self.Member" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Member].[MemberID] AS [MemberID], 
+    [Member].[MemberName] AS [MemberName], 
+    [Member].[MemberCategory] AS [MemberCategory], 
+    [Member].[Address] AS [Address], 
+    [Member].[City] AS [City], 
+    [Member].[OldPostalCode] AS [OldPostalCode], 
+    [Member].[PostalCode] AS [PostalCode], 
+    [Member].[CountryCode] AS [CountryCode], 
+    [Member].[ContactTitle] AS [ContactTitle], 
+    [Member].[PhoneNumber] AS [PhoneNumber], 
+    [Member].[Extension] AS [Extension], 
+    [Member].[FaxNumber] AS [FaxNumber], 
+    [Member].[EmailAddress] AS [EmailAddress], 
+    [Member].[Notes] AS [Notes]
+    FROM [dbo].[Member] AS [Member]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LibraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="Int16" Nullable="false" />
+          <Property Name="BookTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BookType" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rating" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="Publisher" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Author" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Media" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TotalStock" Type="Int16" />
+          <Property Name="NumberBorrowed" Type="Int16" />
+        </EntityType>
+        <EntityType Name="IssueTran">
+          <Key>
+            <PropertyRef Name="TransactionID" />
+          </Key>
+          <Property Name="TransactionID" Type="Int16" Nullable="false" />
+          <Property Name="MemberID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="BookID" Type="Int16" />
+          <Property Name="DateIssue" Type="DateTime" Precision="3" />
+          <Property Name="DateDue" Type="DateTime" Precision="3" />
+          <Property Name="DateActualReturn" Type="DateTime" Precision="3" />
+          <Property Name="BorrowStatus" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MemberName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MemberCategory" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="65" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="OldPostalCode" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="PostalCode" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="CountryCode" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="ContactTitle" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="9" FixedLength="false" Unicode="true" />
+          <Property Name="Extension" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="FaxNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Notes" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="LibraryEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Books" EntityType="Self.Book" />
+          <EntitySet Name="IssueTrans" EntityType="Self.IssueTran" />
+          <EntitySet Name="Members" EntityType="Self.Member" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LibraryModelStoreContainer" CdmEntityContainer="LibraryEntities">
+          <EntitySetMapping Name="Books">
+            <EntityTypeMapping TypeName="LibraryModel.Book">
+              <MappingFragment StoreEntitySet="Books">
+                <ScalarProperty Name="BookID" ColumnName="BookID" />
+                <ScalarProperty Name="BookTitle" ColumnName="BookTitle" />
+                <ScalarProperty Name="BookType" ColumnName="BookType" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+                <ScalarProperty Name="Author" ColumnName="Author" />
+                <ScalarProperty Name="Media" ColumnName="Media" />
+                <ScalarProperty Name="TotalStock" ColumnName="TotalStock" />
+                <ScalarProperty Name="NumberBorrowed" ColumnName="NumberBorrowed" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IssueTrans">
+            <EntityTypeMapping TypeName="LibraryModel.IssueTran">
+              <MappingFragment StoreEntitySet="IssueTran">
+                <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="BookID" ColumnName="BookID" />
+                <ScalarProperty Name="DateIssue" ColumnName="DateIssue" />
+                <ScalarProperty Name="DateDue" ColumnName="DateDue" />
+                <ScalarProperty Name="DateActualReturn" ColumnName="DateActualReturn" />
+                <ScalarProperty Name="BorrowStatus" ColumnName="BorrowStatus" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Members">
+            <EntityTypeMapping TypeName="LibraryModel.Member">
+              <MappingFragment StoreEntitySet="Member">
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+                <ScalarProperty Name="MemberCategory" ColumnName="MemberCategory" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="OldPostalCode" ColumnName="OldPostalCode" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+                <ScalarProperty Name="ContactTitle" ColumnName="ContactTitle" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Extension" ColumnName="Extension" />
+                <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
