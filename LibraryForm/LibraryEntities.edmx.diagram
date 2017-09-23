@@ -8,7 +8,7 @@
         <EntityTypeShape EntityType="SA45_Team08B_LibraryModel.Book" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="SA45_Team08B_LibraryModel.IssueTran" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="SA45_Team08B_LibraryModel.Member" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="SA45_Team08B_LibraryModel.sysdiagram" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SA45_Team08B_LibraryModel.sysdiagram" Width="1.5" PointX="3.375" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="SA45_Team08B_LibraryModel.FK_Tran_Books" ManuallyRouted="false" />
         <AssociationConnector Association="SA45_Team08B_LibraryModel.FK_Tran_Members" ManuallyRouted="false" />
       </Diagram>
