@@ -39,15 +39,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.llBookTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hiGuestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchBorrowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,10 +152,27 @@
             this.llBookTitle.TabIndex = 38;
             this.llBookTitle.Text = "Book ID";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(330, 111);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Total Stock";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(406, 107);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(209, 20);
+            this.textBox6.TabIndex = 44;
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hiGuestToolStripMenuItem,
+            this.searchBorrowToolStripMenuItem,
             this.memberInformationToolStripMenuItem,
             this.bookInformationToolStripMenuItem,
             this.returnBookToolStripMenuItem,
@@ -162,7 +180,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(709, 24);
-            this.menuStrip1.TabIndex = 36;
+            this.menuStrip1.TabIndex = 49;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // hiGuestToolStripMenuItem
@@ -178,6 +196,12 @@
             this.logInToolStripMenuItem.Name = "logInToolStripMenuItem";
             this.logInToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.logInToolStripMenuItem.Text = "Log in";
+            // 
+            // searchBorrowToolStripMenuItem
+            // 
+            this.searchBorrowToolStripMenuItem.Name = "searchBorrowToolStripMenuItem";
+            this.searchBorrowToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.searchBorrowToolStripMenuItem.Text = "Search & Borrow";
             // 
             // memberInformationToolStripMenuItem
             // 
@@ -203,27 +227,12 @@
             this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.reportsToolStripMenuItem.Text = "Reports";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(330, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Total Stock";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(406, 107);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(209, 20);
-            this.textBox6.TabIndex = 44;
-            // 
             // BookInfo_CreateNewBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 429);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox6);
@@ -238,7 +247,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.llBookTitle);
-            this.Controls.Add(this.menuStrip1);
             this.Name = "BookInfo_CreateNewBook";
             this.Text = "BookInfo_AddNewBook";
             this.menuStrip1.ResumeLayout(false);
@@ -262,14 +270,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label llBookTitle;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem hiGuestToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logInToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchBorrowToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem memberInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bookInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem returnBookToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
     }
 }

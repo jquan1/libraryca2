@@ -27,13 +27,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.hiGuestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.memberInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bookInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.returnBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -49,62 +42,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.hiGuestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchBorrowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.memberInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.returnBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hiGuestToolStripMenuItem,
-            this.memberInformationToolStripMenuItem,
-            this.bookInformationToolStripMenuItem,
-            this.returnBookToolStripMenuItem,
-            this.reportsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(634, 24);
-            this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // hiGuestToolStripMenuItem
-            // 
-            this.hiGuestToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logInToolStripMenuItem});
-            this.hiGuestToolStripMenuItem.Name = "hiGuestToolStripMenuItem";
-            this.hiGuestToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.hiGuestToolStripMenuItem.Text = "Hi, Guest";
-            // 
-            // logInToolStripMenuItem
-            // 
-            this.logInToolStripMenuItem.Name = "logInToolStripMenuItem";
-            this.logInToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.logInToolStripMenuItem.Text = "Log in";
-            // 
-            // memberInformationToolStripMenuItem
-            // 
-            this.memberInformationToolStripMenuItem.Name = "memberInformationToolStripMenuItem";
-            this.memberInformationToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
-            this.memberInformationToolStripMenuItem.Text = "Member Information";
-            // 
-            // bookInformationToolStripMenuItem
-            // 
-            this.bookInformationToolStripMenuItem.Name = "bookInformationToolStripMenuItem";
-            this.bookInformationToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
-            this.bookInformationToolStripMenuItem.Text = "Book Information";
-            // 
-            // returnBookToolStripMenuItem
-            // 
-            this.returnBookToolStripMenuItem.Name = "returnBookToolStripMenuItem";
-            this.returnBookToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
-            this.returnBookToolStripMenuItem.Text = "Return book";
-            // 
-            // reportsToolStripMenuItem
-            // 
-            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.reportsToolStripMenuItem.Text = "Reports";
             // 
             // textBox2
             // 
@@ -233,11 +182,71 @@
             this.dataGridView1.Size = new System.Drawing.Size(566, 150);
             this.dataGridView1.TabIndex = 0;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hiGuestToolStripMenuItem,
+            this.searchBorrowToolStripMenuItem,
+            this.memberInformationToolStripMenuItem,
+            this.bookInformationToolStripMenuItem,
+            this.returnBookToolStripMenuItem,
+            this.reportsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(634, 24);
+            this.menuStrip1.TabIndex = 24;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // hiGuestToolStripMenuItem
+            // 
+            this.hiGuestToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logInToolStripMenuItem});
+            this.hiGuestToolStripMenuItem.Name = "hiGuestToolStripMenuItem";
+            this.hiGuestToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.hiGuestToolStripMenuItem.Text = "Hi, Guest";
+            // 
+            // logInToolStripMenuItem
+            // 
+            this.logInToolStripMenuItem.Name = "logInToolStripMenuItem";
+            this.logInToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.logInToolStripMenuItem.Text = "Log in";
+            // 
+            // searchBorrowToolStripMenuItem
+            // 
+            this.searchBorrowToolStripMenuItem.Name = "searchBorrowToolStripMenuItem";
+            this.searchBorrowToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.searchBorrowToolStripMenuItem.Text = "Search & Borrow";
+            // 
+            // memberInformationToolStripMenuItem
+            // 
+            this.memberInformationToolStripMenuItem.Name = "memberInformationToolStripMenuItem";
+            this.memberInformationToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
+            this.memberInformationToolStripMenuItem.Text = "Member Information";
+            // 
+            // bookInformationToolStripMenuItem
+            // 
+            this.bookInformationToolStripMenuItem.Name = "bookInformationToolStripMenuItem";
+            this.bookInformationToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
+            this.bookInformationToolStripMenuItem.Text = "Book Information";
+            // 
+            // returnBookToolStripMenuItem
+            // 
+            this.returnBookToolStripMenuItem.Name = "returnBookToolStripMenuItem";
+            this.returnBookToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.returnBookToolStripMenuItem.Text = "Return book";
+            // 
+            // reportsToolStripMenuItem
+            // 
+            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.reportsToolStripMenuItem.Text = "Reports";
+            // 
             // MemberInfo_UpdateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 422);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
@@ -251,28 +260,19 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.llBookTitle);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.Name = "MemberInfo_UpdateDetails";
             this.Text = "MemberInfo_UpdateDetails";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem hiGuestToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logInToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem memberInformationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bookInformationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem returnBookToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
@@ -288,5 +288,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem hiGuestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logInToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchBorrowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem memberInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bookInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem returnBookToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
     }
 }
