@@ -14,6 +14,12 @@ namespace LibraryForm
     
     public partial class Book
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Book()
+        {
+            this.IssueTrans = new HashSet<IssueTran>();
+        }
+    
         public short BookID { get; set; }
         public string BookTitle { get; set; }
         public string BookType { get; set; }
@@ -23,5 +29,8 @@ namespace LibraryForm
         public string Media { get; set; }
         public Nullable<short> TotalStock { get; set; }
         public Nullable<short> NumberBorrowed { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<IssueTran> IssueTrans { get; set; }
     }
 }

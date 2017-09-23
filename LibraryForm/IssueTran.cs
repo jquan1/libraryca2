@@ -15,15 +15,15 @@ namespace LibraryForm
     public partial class IssueTran
     {
         public short TransactionID { get; set; }
-        public string CustomerID { get; set; }
-        public Nullable<short> VideoCode { get; set; }
+        public string MemberID { get; set; }
+        public short BookID { get; set; }
         public Nullable<System.DateTime> DateIssue { get; set; }
         public Nullable<System.DateTime> DateDue { get; set; }
         public Nullable<System.DateTime> DateActualReturn { get; set; }
-        public string RentalStatus { get; set; }
+        public string BorrowStatus { get; set; }
         public string Remarks { get; set; }
     
-        public virtual Customer Customer { get; set; }
-        public virtual Movy Movy { get; set; }
+        public virtual Book Book { get; set; }
+        public virtual Member Member { get; set; }
     }
 }

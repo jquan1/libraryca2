@@ -14,6 +14,12 @@ namespace LibraryForm
     
     public partial class Member
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Member()
+        {
+            this.IssueTrans = new HashSet<IssueTran>();
+        }
+    
         public string MemberID { get; set; }
         public string MemberName { get; set; }
         public string MemberCategory { get; set; }
@@ -28,5 +34,8 @@ namespace LibraryForm
         public string FaxNumber { get; set; }
         public string EmailAddress { get; set; }
         public string Notes { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<IssueTran> IssueTrans { get; set; }
     }
 }
