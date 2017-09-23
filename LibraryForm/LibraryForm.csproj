@@ -95,17 +95,11 @@
     <Compile Include="Return.designer.cs">
       <DependentUpon>Return.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReturnBook.cs">
+    <Compile Include="Search_Borrow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReturnBook.designer.cs">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Search book.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Search book.designer.cs">
-      <DependentUpon>Search book.cs</DependentUpon>
+    <Compile Include="Search_Borrow.designer.cs">
+      <DependentUpon>Search_Borrow.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Book information.resx">
       <DependentUpon>Book information.cs</DependentUpon>
@@ -137,11 +131,8 @@
     <EmbeddedResource Include="Return.resx">
       <DependentUpon>Return.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReturnBook.resx">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Search book.resx">
-      <DependentUpon>Search book.cs</DependentUpon>
+    <EmbeddedResource Include="Search_Borrow.resx">
+      <DependentUpon>Search_Borrow.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
